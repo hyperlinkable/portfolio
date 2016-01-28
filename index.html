@@ -1,23 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <title>A bit of Boostrap</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>David Wynn Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+-->
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+
   </head>
+
   <body>
-    <h1>A bit of Bootstrap</h1>
-    <h2>Let's see what Bootstrap can do for us</h2>
 
-    <p>Bootstrap is pretty great, and we're going to explore why. Stay tuned for more excitement!</p>
+    <!-- Fixed navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-brand">David Wynn Portfolio</div>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="project1.html">Project One</a></li>
+              <li><a href="project2.html">Project Two</a></li>
+              <li><a href="project3.html">Project Three</a></li>
+              <!--
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li> -->
+            </ul>
+          </li>
+        </ul>
+        <!--
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../navbar/">Default</a></li>
+          <li><a href="../navbar-static-top/">Static top</a></li>
+          <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+        </ul>-->
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
 
-    <p>Here's a paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-    <p>Now, let's list some stuff out:</p>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <hr>
+        <h1>Code Review One</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
 
-    <ul>
-      <li>Stuff</li>ß
-      <li>More stuff</li>
-      <li>Even more stuff</li>
-    </ul>
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Project One</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Project Two</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Project Three</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <p><strong>Portfolio Landing Page</strong></p>
+      <p>Create a webpage using HTML and CSS to be the landing page for your web programming portfolio. Page requirements:</p>
+        <ul>
+          <li>Your name</li>
+          <li>An image of you or something that represents who you are</li>
+          <li>A list of projects you have created with active links to them (either on GitHub or GitHub pages)
+            <ul>
+              <li>For each, include a brief description of the project and what languages it uses</li>
+            </ul>
+          </li>
+          <li>An “About Me” section
+            <ul>
+              <li>Include your background (education, job experience, or why did you decide to take a class on programming, etc)</li>
+              <li>Your current interests/hobbies/skills</li>
+            </ul>
+          </li>
+          <li>Host your site on GitHub Pages as the “user/organization site” which will make it the landing page at <code class="prettyprint">your-username.github.io</code>. Follow along with the instructions from <a href="https://pages.github.com/">GitHub Pages</a> to make your home page.</li>
+        </ul>
+      <p>Don&#39;t forget your Git commits and README! </p>
+
+      <p><hr>
+      Below are the objectives the instructor will use to review your code.
+      <br></p>
+      <h4>This Week&#39;s Code Review Objectives</h4>
+      <ul>
+        <li>Use of all of the HTML tags you have learned so far:
+          <ul>
+            <li>p, h, ul, ol, li, em, strong, a, img, div, span</li>
+          </ul>
+        </li>
+        <li>Use Bootstrap classes to style your page</li>
+        <li>A custom-made stylesheet that uses cascading, the box model, and floats</li>
+        <li>Indentation and spacing of HTML and CSS is accurate.</li>
+        <li>Commits made regularly with clear messages that <em>finish</em> the phrase &quot;It will…&quot;</li>
+        <li>A project README that includes:
+          <ul>
+            <li>author name</li>
+            <li>project or program name</li>
+            <li>description of program</li>
+            <li>program setup instructions</li>
+            <li>link to site on GitHub Pages</li>
+            <li>copyright and license information</li>
+          </ul>
+        </li>
+      </ul>
+
+<h2>About the Author</h2>
+<a name="about"></a>
+<p>Praesent vehicula arcu at velit congue, consectetur vestibulum purus finibus. Mauris sed mi a massa venenatis hendrerit. Integer elementum, enim et eleifend interdum, ligula nibh posuere velit, nec euismod elit nisl eleifend tellus. Pellentesque vitae eros sed sapien interdum dictum sit amet sit amet sem. Etiam bibendum enim ac justo ullamcorper fermentum. Quisque ut nulla porttitor, molestie nibh ut, tincidunt lorem. Aliquam imperdiet arcu nec dolor tempor convallis. Nulla placerat enim ut enim faucibus ultricies.</p>
+
+<p>Nulla sollicitudin, turpis et luctus malesuada, purus diam imperdiet sapien, ut rutrum nibh sem vel quam. Praesent placerat lectus eget quam congue tincidunt. Donec lobortis ipsum ut est bibendum, id tempus dolor interdum. Nunc quis urna placerat, hendrerit augue quis, finibus libero. Cras fringilla et nulla fermentum molestie. Mauris ullamcorper tincidunt ex. Aenean sed tincidunt felis. Donec sit amet diam urna. Fusce sed dignissim massa.</p>
+
+<h2>Contact Information</h2>
+<a name="contact"></a>
+<p>Nullam aliquam diam id nunc ullamcorper elementum. Cras at quam arcu. Ut vestibulum vestibulum aliquet. Sed ac nunc vel leo interdum porttitor quis sit amet purus. Sed convallis mollis pretium. Integer lacus risus, bibendum et tristique vel, sodales sed arcu. Fusce ut suscipit erat. Nullam cursus sem vel mauris suscipit bibendum. Ut et malesuada arcu, eu commodo velit. Fusce quis augue urna.</p>
+
+      <footer>
+        <p>&copy; 2016 David Wynn</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
